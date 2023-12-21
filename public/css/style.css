@@ -28,9 +28,143 @@ img {
 /* === END CSS RESET === */
 
 /* COMPOSITION */
+body {
+    height: 100vh;
+}
 
 /* UTILITIES */
+:root {
+    --clr-black-50: #000000;
+    --clr-black-100: #111111;
+    --clr-grey-400: #7F7F7F;
+    --clr-white: #FFFFFF;
+    --clr-yellow: #F4D04E;
+}
+
+.bg-primary {
+    background-color: var(--clr-yellow);
+}
+
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* BLOCK */
+.card {
+    font-family: "Figtree", sans-serif;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--clr-black-100);
+    background-color: var(--clr-white);
+    box-shadow: 8px 8px 0 0 var(--clr-black-50);
+}
+
+.card__illustration {
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.card-content__tag {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 4px;
+    background-color: var(--clr-yellow);
+}
+
+.card-content__date {
+    font-weight: 500;
+    color: var(--clr-black-100);
+}
+
+.card-content__title {
+    font-weight: 800;
+}
+
+.card-content__text {
+    font-weight: 500;
+    color: var(--clr-grey-400);
+}
+
+.card-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-user-info__name {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--clr-black-100);
+}
 
 /* EXCEPTIONS */
+.card-content__title:hover {
+    color: var(--clr-yellow);
+    cursor: pointer;
+}
+
+@media only screen and (width > 375px) {
+    .card {
+        width: 384px;
+    }
+
+    .card-content__tag {
+        width: 82px;
+        line-height: 21px;
+    }
+
+    .card-content__date {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .card-content__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .card-content__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (width <= 375px) {
+    .card {
+        width: 327px;
+    }
+
+    .card-content__tag {
+        width: 73px;
+        line-height: 18px;
+    }
+
+    .card-content__date {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .card-content__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .card-content__text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

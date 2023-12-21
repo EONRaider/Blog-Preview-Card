@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-  <title></title>
-</head>
-  <body></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+    <title>Blog Preview Card</title>
+  </head>
+  <body class="flex-center-row bg-primary">
+    <main class="card">
+      <img class="card__illustration" src="images/illustration-article.svg" alt="Illustration article">
+      <article class="card-content">
+        <div class="card-content__tag | flex-center-row">Learning</div>
+        <h2 class="card-content__date">Published 21 Dec 2023</h2>
+        <h1 class="card-content__title">HTML & CSS foundations</h1>
+        <p class="card-content__text">These languages are the backbone of every website, defining structure, content,
+          and
+          presentation.</p>
+      </article>
+      <div class="card-user-info">
+        <img class="card-user-info__image" src="images/image-avatar.svg" alt="Image avatar">
+        <p class="card-user-info__name">Greg Cooper</p>
+      </div>
+    </main>
+  </body>
 </html>
