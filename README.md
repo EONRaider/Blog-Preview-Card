@@ -20,9 +20,11 @@ skills by building realistic blog-preview-cards.
 
 ### Screenshot
 
+![Blog-Preview-Card](https://github.com/EONRaider/Blog-Preview-Card/assets/15611424/7777bb8f-6900-49c6-ad75-ff4101068b14)
+
 ### Links
 
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-html5css3-blog-preview-card-hR8U_gma7p)
 - [Check the Live Site](https://eonraider-blog-preview-card.netlify.app/)
 
 ## My process
